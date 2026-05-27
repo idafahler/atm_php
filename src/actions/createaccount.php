@@ -21,6 +21,11 @@ if(current_user_role() !== 'admin'){
     }
 }
 
+if(!validate_name($accountName)){
+    flash_set('error', 'Invalid account name.');
+    redirect('/accounts/create');
+}
+
 $accountRepo->create(
     userId: current_user_id(),
     accountType: $accountType,

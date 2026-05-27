@@ -30,6 +30,11 @@ if ($user['role'] !== 'admin') {
     }
 }
 
+if(!validate_name($accountName)){
+    flash_set('error', 'Invalid account name.');
+    redirect('/admin/accounts/create');
+}
+
 $accountRepo->create(
     userId: $userId,
     accountType: $accountType,
