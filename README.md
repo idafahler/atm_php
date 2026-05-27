@@ -80,7 +80,7 @@ erDiagram
 
 ## Features
 
-### Användarfunktioner
+### User features
 - Log in with card number + PIN
 - View all own accounts and balances
 - Create a new account (max 5 for regular users)
