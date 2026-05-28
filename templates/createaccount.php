@@ -32,7 +32,7 @@ $error = flash_get('error');
         </label>
 
         <label>
-            Account name (optional)
+            Account name
             <input type="text" name="account_name" value="<?= e(old('account_name')) ?>">
         </label>
 
